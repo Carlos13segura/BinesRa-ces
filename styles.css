@@ -1,0 +1,416 @@
+/* Estilos generales */
+body {
+    font-family: 'Roboto', sans-serif; /* Fuente profesional */
+    background-color: #f8f9fa; /* Fondo gris claro */
+    overflow-x: hidden; /* Deshabilita el scroll horizontal en toda la página */
+}
+
+  /* Navbar */
+.navbar {
+    background-color: #ffffff; /* Fondo blanco */
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Sombra ligera */
+}
+
+.navbar-brand {
+    font-weight: 700; /* Negrita */
+    color: #333; /* Texto gris oscuro */
+}
+
+.navbar-brand:hover {
+    color: #007bff; /* Azul al pasar el mouse */
+    text-decoration: none; /* Sin subrayado */
+}
+
+  /* Enlaces del menú */
+.nav-link {
+    font-size: 18px; /* Tamaño de fuente */
+    color: #007bff; /* Azul claro */
+    transition: color 0.3s; /* Transición suave al cambiar de color */
+}
+
+.nav-link:hover {
+    color: #0056b3; /* Azul más oscuro */
+}
+
+
+
+/* Banner */
+.banner {
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('fondo.jpg') center/cover no-repeat;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-title {
+    font-size: 3rem;
+    font-weight: 700;
+    margin-bottom: 10px;
+    color: #ffffff;
+}
+
+.banner-subtitle {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.btn-primary {
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+    color: #e0e0e0;
+}
+
+.btn-primary {
+    background-color: #2600ff49;
+    border: none;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+h2 {
+    color: #002B5C; /* Azul oscuro */
+}
+
+a {
+    text-decoration: none;
+    color: #00509E; /* Azul intermedio */
+    transition: color 0.3s ease;
+}
+
+a:hover {
+    color: #002B5C; /* Azul oscuro */
+}
+
+
+/* Sección de Sucursales */
+#sucursales {
+    background-color: #F8F9FA; /* Gris claro */
+    padding: 50px 0;
+}
+
+#sucursales h2 {
+    color: #002B5C; /* Azul oscuro */
+    font-weight: bold;
+    margin-bottom: 30px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+#sucursales .card {
+    border: none;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    background: linear-gradient(to bottom, #FFFFFF, #F4F4F4);
+}
+
+#sucursales .card:hover {
+    transform: translateY(-12px);
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.2);
+}
+
+#sucursales .btn {
+    background-color: #00509E; /* Azul intermedio */
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 20px;
+    font-size: 14px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#sucursales .btn:hover {
+    background-color: #002B5C; /* Azul oscuro */
+    transform: scale(1.1);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+
+/* Títulos y textos */
+h5.card-title {
+    color: #002B5C; /* Azul oscuro */
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+    letter-spacing: 0.5px;
+}
+
+p.card-text {
+    color: #4B4B4B; /* Gris texto */
+    color: #fff;
+    font-size: 14px;
+    line-height: 1.5;
+    margin-bottom: 10px;
+}
+
+#propiedades .row {
+    row-gap: 30px;
+}
+
+
+section {
+    padding: 3rem 0;
+}
+
+/* Testimonios */
+#testimonios {
+    background-color: #0d3358; /* Fondo gris claro */
+    padding: 3rem 0;
+}
+
+#testimonios h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #00509E; /* Azul intermedio */
+    margin-bottom: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.blockquote {
+    background-color: #ffffff; /* Fondo blanco */
+    border-left: 4px solid #00509E;
+    padding: 2rem 1.5rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.25rem;
+    color: #000000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border-radius: 8px;
+}
+
+.blockquote p {
+    font-style: italic;
+    line-height: 1.6;
+}
+
+.blockquote-footer {
+    color: #00509E; /* Azul intermedio */
+    font-style: normal;
+    color: #FFFFFF;
+    font-weight: bold;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: #00509E; /* Azul intermedio */
+    filter: invert(1);
+    opacity: 0.8;
+    transition: opacity 0.3s ease;
+}
+
+.carousel-control-prev-icon:hover,
+.carousel-control-next-icon:hover {
+    opacity: 1;
+    transform: scale(1.1);
+}
+
+.carousel-inner {
+    padding: 1rem;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+}
+
+.carousel-item.active .blockquote,
+.carousel-item-next .blockquote,
+.carousel-item-prev .blockquote {
+    transform: scale(1.05);
+}
+
+.carousel-item-next, .carousel-item-prev {
+    transition: transform 0.3s ease;
+}
+
+@media (max-width: 768px) {
+    #testimonios h2 {
+        font-size: 2rem;
+    }
+
+    .blockquote {
+        padding: 1.5rem;
+    }
+}
+
+
+/* Servicios */
+#servicios {
+    background-color: #F1F1F1; /* Gris claro */
+}
+
+#servicios h3 {
+    color: #00509E; /* Azul intermedio */
+    font-size: 1.5rem;
+    margin-top: 1rem;
+}
+
+#servicios p {
+    color: #555;
+    font-size: 1rem;
+}
+
+#servicios i {
+    color: #00509E; /* Azul intermedio */
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+#servicios i:hover {
+    transform: scale(1.2);
+    color: #002B5C; /* Azul oscuro */
+}
+
+/* Ubicación */
+#ubicacion {
+    background-color: #FFFFFF; /* Blanco */
+}
+
+#ubicacion .ratio {
+    border: 2px solid #00509E; /* Azul intermedio */
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#ubicacion iframe {
+    border: none;
+}
+
+/* Preguntas Frecuentes (FAQ) */
+#faq {
+    background-color: #F8F9FA; /* Gris claro */
+}
+
+#faq .accordion-header {
+    font-size: 1.2rem;
+}
+
+#faq .accordion-button {
+    background-color: #00509E; /* Azul intermedio */
+    color: #FFFFFF;
+    border: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#faq .accordion-button:not(.collapsed) {
+    background-color: #002B5C; /* Azul oscuro */
+}
+
+#faq .accordion-button:hover {
+    transform: scale(1.02);
+}
+
+#faq .accordion-item {
+    border: none;
+    margin-bottom: 1rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+#faq .accordion-body {
+    font-size: 1rem;
+    color: #555;
+}
+
+/* Transiciones Globales */
+button, a.btn, .carousel-control-prev, .carousel-control-next {
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+button:hover, a.btn:hover {
+    transform: scale(1.05);
+}
+
+blockquote {
+    transition: box-shadow 0.3s ease;
+}
+
+blockquote:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Footer */
+footer {
+    background-color: #002B5C; /* Azul oscuro */
+    color: #FFFFFF;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Animaciones */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+#sucursales, #propiedades {
+    animation: fadeIn 1s ease;
+}
+
+/* Footer */
+footer {
+    background-color: #002B5C; /* Azul oscuro */
+    color: #FFFFFF; /* Texto blanco */
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+footer a {
+    color: #FFD700; /* Amarillo dorado */
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #E4C098; /* Beige */
+}
+
+/* Botón de WhatsApp */
+#whatsapp-button {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #25D366; /* Verde WhatsApp */
+    color: #FFFFFF;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    z-index: 1000;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#whatsapp-button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+#whatsapp-button i {
+    font-size: 28px;
+}

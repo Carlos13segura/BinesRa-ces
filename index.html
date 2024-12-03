@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Binenes Raíces</title>
+        <link rel="Icon" href="logo Inmoviliaria.jpg" type="Icon">
+        <link rel="stylesheet" href="styles.css">
+        
+        <!-- Bootstrap -->
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+        <!-- Google Fonts -->
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+        <!-- Iconify -->
+        <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+    </head>
+
+    <body>
+        <!-- navbar -->
+        <nav class="navbar navbar-expand-lg">
+            <div class="container">
+                <a class="navbar-brand" href="#">Bienes Raíces</a>
+                <button class="navbar-toggler" type="button" data-bs="collapse" data-bs-target="#navbarNav" aria-contents="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+                    <sapan class="navbar-toggler-icon"></sapan>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link active" href="propiedades.html">Propiedades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="carrito.html">Carrito</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+        <!-- Bannner -->
+        <section class="banner d-flex aligm-items-center text-center">
+            <div class="container">
+                <h1 class="banner-title">Encuentra Tu hogar ideal</h1>
+                <p class="banner-subtitle">Venta y Renta de Departamentos en las mejores zonas.</p>
+                <a href="#" class="btn btn-primary">Ver Zonas</a>
+            </div>
+        </section>
+
+        <!-- Acceso rápido a las 4 sucursales -->
+        <section id="sucursales" class="py-5">
+            <div class="container">
+            <h2 class="text-center mb-4">Acceso Rápido a Nuestras Sucursales</h2>
+            <div class="row">
+                <!-- Sucursal 1 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                    <span class="iconify" data-icon="mdi:office-building" data-inline="false" style="font-size:48px; color:#007bff;"></span>
+                        <h5 class="card-title mt-3">Sucursal Puebla</h5>
+                        <p class="card-text text-dark">Av. Principal #123, Puebla.</p>
+                        <a href="Sucursal Puebla.html" class="btn btn-outline-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                </div>
+                <!-- Sucursal 2 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                    <span class="iconify" data-icon="mdi:office-building" data-inline="false" style="font-size:48px; color:#007bff;"></span>
+                        <h5 class="card-title mt-3">Sucursal Tlaxcala</h5>
+                        <p class="card-text text-dark">Calle Secundaria #456, Tlaxcala.</p>
+                        <a href="Sucursal Tlaxcala.html" class="btn btn-outline-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                </div>
+                <!-- Sucursal 3 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                <div class="card h-100 text-center">
+                    <div class="card-body">
+                    <span class="iconify" data-icon="mdi:office-building" data-inline="false" style="font-size:48px; color:#007bff;"></span>
+                        <h5 class="card-title mt-3">Sucursal Poza Rica</h5>
+                        <p class="card-text text-dark">Blvd. Costera #789, Poza Rica.</p>
+                        <a href="Sucursal Poza Rica.html" class="btn btn-outline-primary">Ver Detalles</a>
+                    </div>
+                </div>
+                </div>
+                <!-- Sucursal 4 -->
+                <div class="col-md-3 col-sm-6 mb-4">
+                    <div class="card h-100 text-center">
+                        <div class="card-body">
+                        <span class="iconify" data-icon="mdi:office-building" data-inline="false" style="font-size:48px; color:#007bff;"></span>
+                            <h5 class="card-title mt-3">Sucursal Ciudad de México</h5>
+                            <p class="card-text text-dark">Paseo de la Reforma #101, CDMX.</p>
+                            <a href="Ciudad de Mexico.html" class="btn btn-outline-primary">Ver Detalles</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section id="testimonios" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-5">Lo que Dicen Nuestros Clientes</h2>
+            <div id="carouselTestimonios" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <blockquote class="blockquote text-center">
+                            <p>"El servicio fue excelente, encontré la propiedad de mis sueños."</p>
+                            <footer class="blockquote-footer">Juan Pérez</footer>
+                        </blockquote>
+                    </div>
+                    <div class="carousel-item">
+                        <blockquote class="blockquote text-center">
+                            <p>"Muy profesionales y confiables, los recomiendo totalmente."</p>
+                            <footer class="blockquote-footer">Ana Gómez</footer>
+                        </blockquote>
+                    </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="prev">
+                    <span class="carousel-control-prev-icon"></span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselTestimonios" data-bs-slide="next">
+                    <span class="carousel-control-next-icon"></span>
+                </button>
+            </div>
+        </div>
+    </section>
+    
+
+    <section id="servicios" class="py-5 bg-light">
+        <div class="container text-center">
+            <h2 class="mb-4">Nuestros Servicios</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <i class="bi bi-house-door-fill fs-1 text-primary"></i>
+                    <h3 class="mt-3">Venta de Propiedades</h3>
+                    <p>Encuentra propiedades únicas a los mejores precios.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-building fs-1 text-primary"></i>
+                    <h3 class="mt-3">Renta</h3>
+                    <p>Renta espacios cómodos en las mejores ubicaciones.</p>
+                </div>
+                <div class="col-md-4">
+                    <i class="bi bi-handshake fs-1 text-primary"></i>
+                    <h3 class="mt-3">Asesoría Personalizada</h3>
+                    <p>Te acompañamos en cada paso del proceso.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+    <section id="ubicacion" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Nuestras Ubicaciones</h2>
+            <div class="ratio ratio-16x9">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=YOUR_MAP_URL_HERE" 
+                    width="600" 
+                    height="450" 
+                    allowfullscreen="" 
+                    loading="lazy">
+                </iframe>
+            </div>
+        </div>
+    </section>
+    
+
+    
+    <section id="faq" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Preguntas Frecuentes</h2>
+            <div class="accordion" id="faqAccordion">
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq1">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapse1">
+                            ¿Cómo puedo agendar una cita?
+                        </button>
+                    </h2>
+                    <div id="collapse1" class="accordion-collapse collapse show" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Puedes agendar una cita directamente en nuestra página o llamarnos al 555-5555.
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header" id="faq2">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapse2">
+                            ¿Ofrecen financiamiento?
+                        </button>
+                    </h2>
+                    <div id="collapse2" class="accordion-collapse collapse" data-bs-parent="#faqAccordion">
+                        <div class="accordion-body">
+                            Sí, trabajamos con varias instituciones para ofrecerte opciones de financiamiento.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+
+    
+
+<!-- Boton de WhatsApp -->
+    <!-- Botón de WhatsApp -->
+    <a id="whatsapp-button" href="https://wa.me/1234567890" target="_blank" title="Contáctanos por WhatsApp">
+        <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span>
+    </a>
+
+<!-- Footer (Opcional) -->
+<footer class=" py-4">
+    <div class="container text-center">
+    <p class="mb-0">&copy; 2024 Bienes Raíces. Todos los derechos reservados.</p>
+    </div>
+</footer>
+
+
+        <!-- Bootstrap js  -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+        <!-- Iconify JS -->
+        <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+
+        <!-- Custom JS -->
+        <script src="script.js"></script>
+    </body>
+</html>

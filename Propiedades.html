@@ -1,0 +1,2080 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Propiedades</title>
+    <link rel="Icon" href="logo Inmoviliaria.jpg" type="Icon">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="src/styles 2.css">
+    <!-- Iconify -->
+    <script src="https://code.iconify.design/3/3.0.0/iconify.min.js"></script>
+</head>
+<body>
+
+    <!-- navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">Bienes Raíces</a>
+            <button class="navbar-toggler" type="button" data-bs="collapse" data-bs-target="#navbarNav" aria-contents="navbarNav"  aria-expanded="false" aria-label="Toggle navigation">
+                <sapan class="navbar-toggler-icon"></sapan>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="propiedades.html">Propiedades</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-5">
+        <h2 class="text-center mb-4">Propiedades Disponibles</h2>
+
+        <!-- Lista de Propiedades -->
+        <div class="row row-cols-1 row-cols-md-3 g-4" id="propertiesGrid">
+            <!--Propiedad 1 -->
+            <div class="col property-card" data-location="Puebla" data-type="Venta" data-price="2000000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 1.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Puebla Centro</h5>
+                        <p class="card-text">
+                            $2,000,000 MXN <br>
+                            3 Recámaras • 2 Baños • 120m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPueblaCentro">
+                            Comprar
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Propiedad 2 -->
+            <div class="col property-card" data-location="Poza Rica" data-type="Venta" data-price="1500000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 2.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Poza Rica</h5>
+                        <p class="card-text">
+                            $1,500,000 MXN <br>
+                            3 Recámaras • 2 Baño • 80m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPozaRica">
+                            Comprar
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            <!-- Propiedad 3 -->
+            <div class="col property-card" data-location="Tlaxcala" data-type="Renta" data-price="15000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 1.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento en Tlaxcala Centro</h5>
+                        <p class="card-text">
+                            $15,000 MXN/mes <br>
+                            2 Recámaras • 1 Baño • 80m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalTlaxcalaCentro">
+                            Rentar 
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Propiedad 4 -->
+            <div class="col property-card" data-location="Poza Rica" data-type="Venta" data-price="3000000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 4.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Poza Rica</h5>
+                        <p class="card-text">
+                            $3,000,000 MXN <br>
+                            4 Recámaras • 3 Baños • 200m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPozaRica">
+                            Comprar Casa
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Renta" data-price="25000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/PenHouse.webp" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Penthouse en Polanco</h5>
+                        <p class="card-text">
+                            $25,000 MXN/mes <br>
+                            3 Recámaras • 2 Baños • 150m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPolanco">
+                            Rentar
+                        </button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Puebla" data-type="Venta" data-price="1800000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 5.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Puebla Angelópolis</h5>
+                        <p class="card-text">
+                            $1,800,000 MXN <br>
+                            3 Recámaras • 2 Baños • 130m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalAngelopolis">
+                            Comprar
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Tlaxcala" data-type="Venta" data-price="1200000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 6.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Económica en Tlaxcala</h5>
+                        <p class="card-text">
+                            $1,200,000 MXN <br>
+                            2 Recámaras • 1 Baño • 90m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaEconomica">
+                            Comprar
+                        </button>
+                        
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Renta" data-price="40000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 7.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Lomas de Chapultepec</h5>
+                        <p class="card-text">
+                            $40,000 MXN/mes <br>
+                            4 Recámaras • 4 Baños • 300m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaChapultepec">Rentar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Poza Rica" data-type="Renta" data-price="10000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 2.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento en Poza Rica</h5>
+                        <p class="card-text">
+                            $10,000 MXN/mes <br>
+                            1 Recámara • 1 Baño • 50m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDepartamentoPozaRica">Rentar</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Venta" data-price="4500000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Casa Moderna.webp" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Moderna en Coyoacán</h5>
+                        <p class="card-text">
+                            $4,500,000 MXN <br>
+                            4 Recámaras • 3 Baños • 250m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaCoyoacan">
+                            Comprar
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Puebla" data-type="Renta" data-price="20000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 3.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento en Puebla Zona Angelópolis</h5>
+                        <p class="card-text">
+                            $20,000 MXN/mes <br>
+                            3 Recámaras • 2 Baños • 150m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDeptoZonaAngelopolis">
+                            Rentar
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Tlaxcala" data-type="Venta" data-price="1000000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 8.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Tlaxcala</h5>
+                        <p class="card-text">
+                            $1,000,000 MXN <br>
+                            500m² • 3 Recámaras • 3 Baños 
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaTlaxcala">
+                            Comprar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Renta" data-price="35000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 9.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa de Lujo en Santa Fe</h5>
+                        <p class="card-text">
+                            $35,000 MXN/mes <br>
+                            2 Recámaras • 2 Baños • 180m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaLujoSantaFe">
+                            Rentar
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Puebla" data-type="Venta" data-price="2500000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 10.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Residencial en Puebla</h5>
+                        <p class="card-text">
+                            $2,500,000 MXN <br>
+                            3 Recámaras • 2 Baños • 160m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaResidencialPuebla">
+                            Comprar 
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Tlaxcala" data-type="Renta" data-price="8000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 11.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Pequeña en Tlaxcala</h5>
+                        <p class="card-text">
+                            $8,000 MXN/mes <br>
+                            1 Recámara • 1 Baño • 60m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaRentaTlaxcala">
+                            Rentar
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Poza Rica" data-type="Venta" data-price="3200000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 12.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Familiar en Poza Rica</h5>
+                        <p class="card-text">
+                            $3,200,000 MXN <br>
+                            4 Recámaras • 3 Baños • 300m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaFamiliarPozaRica">
+                            Comprar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Renta" data-price="25000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 4.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento en Polanco</h5>
+                        <p class="card-text">
+                            $25,000 MXN/mes <br>
+                            2 Recámaras • 2 Baños • 120m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDepartamentoPolanco">
+                            Rentar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Puebla" data-type="Venta" data-price="1850000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 13.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa Económica en Puebla</h5>
+                        <p class="card-text">
+                            $1,850,000 MXN <br>
+                            3 Recámaras • 2 Baños • 90m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaEconomicaPuebla">
+                            Comprar 
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Tlaxcala" data-type="Venta" data-price="750000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 15.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Tlaxcala</h5>
+                        <p class="card-text">
+                            $750,000 MXN <br>
+                            400m² • Zona céntrica
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaTlaxcala">
+                            Comprar 
+                        </button>                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Poza Rica" data-type="Renta" data-price="18000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/Propiedad 14.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Casa en Fraccionamiento Poza Rica</h5>
+                        <p class="card-text">
+                            $18,000 MXN/mes <br>
+                            3 Recámaras • 2 Baños • 200m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalCasaFraccionamientoPozaRica">
+                            Rentar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Ciudad de México" data-type="Venta" data-price="12000000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/PenHouse 2.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Venta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Penthouse en Reforma</h5>
+                        <p class="card-text">
+                            $12,000,000 MXN <br>
+                            3 Recámaras • 3 Baños • 350m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalPenthouseReforma">
+                            Comprar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Tlaxcala" data-type="Renta" data-price="6000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 6.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento Económico en Tlaxcala</h5>
+                        <p class="card-text">
+                            $6,000 MXN/mes <br>
+                            1 Recámara • 1 Baño • 40m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDeptoEconomicoTlaxcala">
+                            Rentar 
+                        </button>
+                        
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col property-card" data-location="Puebla" data-type="Renta" data-price="15000">
+                <div class="card h-100">
+                    <div class="position-relative">
+                        <img src="Casa Imagenes/departamento 5.jpg" class="card-img-top" alt="Propiedad">
+                        <span class="badge position-absolute">Renta</span>
+                    </div>
+                    <div class="card-body">
+                        <h5 class="card-title">Departamento en Puebla Zona Histórica</h5>
+                        <p class="card-text">
+                            $15,000 MXN/mes <br>
+                            2 Recámaras • 1 Baño • 100m²
+                        </p>
+                    </div>
+                    <div class="card-footer text-end">
+                        <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalDeptoPueblaZonaHistorica">
+                            Rentar 
+                        </button>                        
+                    </div>
+                </div>
+            </div>            
+        </div>
+    </main>
+
+    <!-- Botón de WhatsApp -->
+    <a id="whatsapp-button" href="https://wa.me/1234567890" target="_blank" title="Contáctanos por WhatsApp">
+        <span class="iconify" data-icon="mdi:whatsapp" data-inline="false"></span>
+    </a>
+
+
+    <div class="modal fade" id="modalPueblaCentro" tabindex="-1" aria-labelledby="modalLabelPueblaCentro" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelPueblaCentro">Comprar Casa en Puebla Centro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">$2,000,000 MXN</p>
+                            <p class="mb-1">3 Recámaras • 2 Baños • 120m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Puebla Centro</p>
+                        </div>
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Puebla Centro">
+                        <input type="hidden" name="precio" value="2000000">
+                        <input type="hidden" name="ubicacion" value="Puebla">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" 
+                                           placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" 
+                                           placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" 
+                                           placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" 
+                                           accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" 
+                                      placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- MOdal para Casa en Poza Rica  -->
+    <div class="modal fade" id="modalPozaRica" tabindex="-1" aria-labelledby="modalLabelPozaRica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelPozaRica">Comprar Propiedad en Poza Rica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">3 Recámaras • 2 Baños • 80m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Poza Rica</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Propiedad en Poza Rica">
+                        <input type="hidden" name="ubicacion" value="Poza Rica">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 80m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Tlaxcal Centro -->
+    <div class="modal fade" id="modalTlaxcalaCentro" tabindex="-1" aria-labelledby="modalLabelTlaxcalaCentro" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelTlaxcalaCentro">Rentar Departamento en Tlaxcala Centro</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento 2 Recámaras • 1 Baño • 80m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Tlaxcala Centro</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento en Tlaxcala Centro">
+                        <input type="hidden" name="ubicacion" value="Tlaxcala Centro">
+                        <input type="hidden" name="detalles" value="Departamento 2 Recámaras • 1 Baño • 80m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf" >
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Casa En Poza Rica -->
+    <div class="modal fade" id="modalPozaRica" tabindex="-1" aria-labelledby="modalLabelPozaRica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelPozaRica">Comprar Casa en Poza Rica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Poza Rica</p>
+                            <p class="mb-1">$3,000,000 MXN</p>
+                            <p class="mb-0">4 Recámaras • 3 Baños • 200m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Poza Rica">
+                        <input type="hidden" name="ubicacion" value="Poza Rica">
+                        <input type="hidden" name="precio" value="3000000">
+                        <input type="hidden" name="detalles" value="4 Recámaras • 3 Baños • 200m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Penthouse en Polanco -->
+    <div class="modal fade" id="modalPolanco" tabindex="-1" aria-labelledby="modalLabelPolanco" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelPolanco">Rentar Penthouse en Polanco</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Penthouse en Polanco</p>
+                            <p class="mb-1">$25,000 MXN/mes</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 150m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Penthouse en Polanco">
+                        <input type="hidden" name="ubicacion" value="México">
+                        <input type="hidden" name="precio" value="25000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 150m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <div class="modal fade" id="modalAngelopolis" tabindex="-1" aria-labelledby="modalLabelAngelopolis" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelAngelopolis">Comprar Casa en Angelópolis</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Angelópolis</p>
+                            <p class="mb-1">$1,800,000 MXN</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 130m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Angelópolis">
+                        <input type="hidden" name="ubicacion" value="Puebla">
+                        <input type="hidden" name="precio" value="1800000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 130m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+
+    <!-- Modal para Casa Economica En Tlaxcala -->
+    <div class="modal fade" id="modalCasaEconomica" tabindex="-1" aria-labelledby="modalLabelCasaEconomica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaEconomica">Comprar Casa Económica en Tlaxcala</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa Económica en Tlaxcala</p>
+                            <p class="mb-1">$1,200,000 MXN</p>
+                            <p class="mb-0">2 Recámaras • 1 Baño • 90m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa Económica en Tlaxcala">
+                        <input type="hidden" name="ubicacion" value="Tlaxcala">
+                        <input type="hidden" name="precio" value="1200000">
+                        <input type="hidden" name="detalles" value="2 Recámaras • 1 Baño • 90m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Departamento en Poza Rica -->
+    <div class="modal fade" id="modalDepartamentoPozaRica" tabindex="-1" aria-labelledby="modalLabelDepartamentoPozaRica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelDepartamentoPozaRica">Rentar Departamento en Poza Rica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento en Poza Rica</p>
+                            <p class="mb-1">$10,000 MXN/mes</p>
+                            <p class="mb-0">1 Recámara • 1 Baño • 50m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento en Poza Rica">
+                        <input type="hidden" name="ubicacion" value="Poza Rica">
+                        <input type="hidden" name="precio" value="10000">
+                        <input type="hidden" name="detalles" value="1 Recámara • 1 Baño • 50m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Casa En Coyoacán -->
+    <div class="modal fade" id="modalCasaCoyoacan" tabindex="-1" aria-labelledby="modalLabelCasaCoyoacan" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaCoyoacan">Comprar Casa en Coyoacán</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Coyoacán</p>
+                            <p class="mb-1">$4,500,000 MXN</p>
+                            <p class="mb-0">4 Recámaras • 3 Baños • 250m²</p>
+                        </div>
+                        
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Coyoacán">
+                        <input type="hidden" name="ubicacion" value="México">
+                        <input type="hidden" name="precio" value="4500000">
+                        <input type="hidden" name="detalles" value="4 Recámaras • 3 Baños • 250m²">
+                        
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Departamento Zona Angelópolis -->
+    <div class="modal fade" id="modalDeptoZonaAngelopolis" tabindex="-1" aria-labelledby="modalLabelDeptoZonaAngelopolis" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelDeptoZonaAngelopolis">Rentar Departamento en Zona Angelópolis</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento en Zona Angelópolis</p>
+                            <p class="mb-1">$20,000 MXN/mes</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 150m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento en Zona Angelópolis">
+                        <input type="hidden" name="ubicacion" value="Puebla">
+                        <input type="hidden" name="precio" value="20000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 150m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Casa en Tlaxcala -->
+    <div class="modal fade" id="modalCasaTlaxcala" tabindex="-1" aria-labelledby="modalLabelCasaTlaxcala" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaTlaxcala">Comprar Casa en Tlaxcala</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Tlaxcala</p>
+                            <p class="mb-1">$1,000,000 MXN</p>
+                            <p class="mb-0">500m² • 3 Recámaras • 3 Baños</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Tlaxcala">
+                        <input type="hidden" name="ubicacion" value="Tlaxcala">
+                        <input type="hidden" name="precio" value="1000000">
+                        <input type="hidden" name="detalles" value="500m² • 3 Recámaras • 3 Baños">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Casa de Lujo en Santa Fe -->
+    <div class="modal fade" id="modalCasaLujoSantaFe" tabindex="-1" aria-labelledby="modalLabelCasaLujoSantaFe" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaLujoSantaFe">Rentar Casa de Lujo en Santa Fe</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa de Lujo en Santa Fe</p>
+                            <p class="mb-1">$35,000 MXN/mes</p>
+                            <p class="mb-0">2 Recámaras • 2 Baños • 180m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa de Lujo en Santa Fe">
+                        <input type="hidden" name="ubicacion" value="México">
+                        <input type="hidden" name="precio" value="35000">
+                        <input type="hidden" name="detalles" value="2 Recámaras • 2 Baños • 180m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Casa Recidencial en Puebla-->
+    <div class="modal fade" id="modalCasaResidencialPuebla" tabindex="-1" aria-labelledby="modalLabelCasaResidencialPuebla" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaResidencialPuebla">Comprar Casa Residencial en Puebla</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa Residencial en Puebla</p>
+                            <p class="mb-1">$2,500,000 MXN</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 160m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa Residencial en Puebla">
+                        <input type="hidden" name="ubicacion" value="Puebla, México">
+                        <input type="hidden" name="precio" value="2500000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 160m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="identificacion" class="form-label">Identificación Oficial (INE o Pasaporte)</label>
+                                    <input type="file" class="form-control" id="identificacion" name="identificacion" accept=".jpg,.png,.pdf">
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Casa en Tlaxcala -->
+    <div class="modal fade" id="modalCasaRentaTlaxcala" tabindex="-1" aria-labelledby="modalLabelCasaRentaTlaxcala" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaRentaTlaxcala">Rentar Casa en Tlaxcala</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Tlaxcala</p>
+                            <p class="mb-1">$8,000 MXN/mes</p>
+                            <p class="mb-0">1 Recámara • 1 Baño • 60m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Tlaxcala">
+                        <input type="hidden" name="ubicacion" value="Tlaxcala">
+                        <input type="hidden" name="precio" value="8000">
+                        <input type="hidden" name="detalles" value="1 Recámara • 1 Baño • 60m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal Casa Familiar en Poza Rica -->
+    <div class="modal fade" id="modalCasaFamiliarPozaRica" tabindex="-1" aria-labelledby="modalLabelCasaFamiliarPozaRica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaFamiliarPozaRica">Comprar Casa Familiar en Poza Rica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa Familiar en Poza Rica</p>
+                            <p class="mb-1">$3,200,000 MXN</p>
+                            <p class="mb-0">4 Recámaras • 3 Baños • 300m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa Familiar en Poza Rica">
+                        <input type="hidden" name="ubicacion" value="Veracruz">
+                        <input type="hidden" name="precio" value="3200000">
+                        <input type="hidden" name="detalles" value="4 Recámaras • 3 Baños • 300m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Moodal Departamento en Polanco -->
+    <div class="modal fade" id="modalDepartamentoPolanco" tabindex="-1" aria-labelledby="modalLabelDepartamentoPolanco" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelDepartamentoPolanco">Rentar Departamento en Polanco</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento en Polanco</p>
+                            <p class="mb-1">$25,000 MXN/mes</p>
+                            <p class="mb-0">2 Recámaras • 2 Baños • 120m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento en Polanco">
+                        <input type="hidden" name="ubicacion" value="México">
+                        <input type="hidden" name="precio" value="25000">
+                        <input type="hidden" name="detalles" value="2 Recámaras • 2 Baños • 120m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Casa En Puebla  -->
+    <div class="modal fade" id="modalCasaEconomicaPuebla" tabindex="-1" aria-labelledby="modalLabelCasaEconomicaPuebla" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaEconomicaPuebla">Comprar Casa Económica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa Económica</p>
+                            <p class="mb-1">$1,850,000 MXN</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 90m²</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa Económica">
+                        <input type="hidden" name="ubicacion" value="Puebla">
+                        <input type="hidden" name="precio" value="1850000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 90m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!--  Casa en Tlaxcala -->
+    <div class="modal fade" id="modalCasaTlaxcala" tabindex="-1" aria-labelledby="modalLabelCasaTlaxcala" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaTlaxcala">Comprar Casa en Tlaxcala</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Tlaxcala</p>
+                            <p class="mb-1">$750,000 MXN</p>
+                            <p class="mb-0">400m² • Zona céntrica</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Tlaxcala">
+                        <input type="hidden" name="ubicacion" value="Tlaxcala, Veracruz">
+                        <input type="hidden" name="precio" value="750000">
+                        <input type="hidden" name="detalles" value="400m² • Zona céntrica">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!--  Rentar Casa en Fraccionamiento Poza Rica -->
+    <div class="modal fade" id="modalCasaFraccionamientoPozaRica" tabindex="-1" aria-labelledby="modalLabelCasaFraccionamientoPozaRica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelCasaFraccionamientoPozaRica">Rentar Casa en Fraccionamiento Poza Rica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Casa en Fraccionamiento Poza Rica</p>
+                            <p class="mb-1">$18,000 MXN/mes</p>
+                            <p class="mb-0">3 Recámaras • 2 Baños • 200m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Fraccionamiento Residencial Poza Rica</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Casa en Fraccionamiento Poza Rica">
+                        <input type="hidden" name="ubicacion" value="Fraccionamiento Residencial Poza Rica">
+                        <input type="hidden" name="precio" value="18000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 2 Baños • 200m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Comprar Penthouse en Reforma-->
+    <div class="modal fade" id="modalPenthouseReforma" tabindex="-1" aria-labelledby="modalLabelPenthouseReforma" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Compras.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelPenthouseReforma">Comprar Penthouse en Reforma</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Penthouse en Reforma</p>
+                            <p class="mb-1">$12,000,000 MXN</p>
+                            <p class="mb-0">3 Recámaras • 3 Baños • 350m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Paseo de la Reforma, Ciudad de México</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Penthouse en Reforma">
+                        <input type="hidden" name="ubicacion" value="Paseo de la Reforma, Ciudad de México">
+                        <input type="hidden" name="precio" value="12000000">
+                        <input type="hidden" name="detalles" value="3 Recámaras • 3 Baños • 350m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Compra</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Compra</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Modal para Rentar Departamento Económico en Tlaxcala -->
+    <div class="modal fade" id="modalDeptoEconomicoTlaxcala" tabindex="-1" aria-labelledby="modalLabelDeptoEconomicoTlaxcala" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelDeptoEconomicoTlaxcala">Rentar Departamento Económico en Tlaxcala</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento Económico en Tlaxcala</p>
+                            <p class="mb-1">$6,000 MXN/mes</p>
+                            <p class="mb-0">1 Recámara • 1 Baño • 40m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Zona Centro, Tlaxcala</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento Económico en Tlaxcala">
+                        <input type="hidden" name="ubicacion" value="Zona Centro, Tlaxcala">
+                        <input type="hidden" name="precio" value="6000">
+                        <input type="hidden" name="detalles" value="1 Recámara • 1 Baño • 40m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal para Rentar Departamento en Puebla Zona Histórica -->
+    <div class="modal fade" id="modalDeptoPueblaZonaHistorica" tabindex="-1" aria-labelledby="modalLabelDeptoPueblaZonaHistorica" aria-hidden="true">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <form action="Guardar Rentas.php" method="POST">
+                    <!-- Modal Header -->
+                    <div class="modal-header bg-primary text-white">
+                        <h5 class="modal-title" id="modalLabelDeptoPueblaZonaHistorica">Rentar Departamento en Puebla Zona Histórica</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+    
+                    <!-- Modal Body -->
+                    <div class="modal-body">
+                        <!-- Información de la Propiedad -->
+                        <div class="border p-3 mb-4 bg-light rounded">
+                            <h6 class="mb-1"><strong>Detalles de la Propiedad:</strong></h6>
+                            <p class="mb-1">Departamento en Puebla Zona Histórica</p>
+                            <p class="mb-1">$15,000 MXN/mes</p>
+                            <p class="mb-0">2 Recámaras • 1 Baño • 100m²</p>
+                            <p class="mb-0"><strong>Ubicación:</strong> Zona Histórica de Puebla</p>
+                        </div>
+    
+                        <!-- Campos del Formulario -->
+                        <input type="hidden" name="propiedad" value="Departamento en Puebla Zona Histórica">
+                        <input type="hidden" name="ubicacion" value="Zona Histórica de Puebla">
+                        <input type="hidden" name="precio" value="15000">
+                        <input type="hidden" name="detalles" value="2 Recámaras • 1 Baño • 100m²">
+    
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="nombre" class="form-label">Nombre Completo</label>
+                                    <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Escribe tu nombre completo" required>
+                                </div>
+                            </div>
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="telefono" class="form-label">Número de Teléfono</label>
+                                    <input type="tel" class="form-control" id="telefono" name="telefono" placeholder="Escribe tu número de teléfono" required>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-6">
+                                <div class="mb-3">
+                                    <label for="correo" class="form-label">Correo Electrónico</label>
+                                    <input type="email" class="form-control" id="correo" name="correo" placeholder="Escribe tu correo electrónico" required>
+                                </div>
+                            </div>
+                        </div>
+    
+                        <div class="mb-3">
+                            <label for="comentarios" class="form-label">Comentarios o Preguntas</label>
+                            <textarea class="form-control" id="comentarios" name="comentarios" rows="3" placeholder="Escribe cualquier comentario o pregunta que tengas"></textarea>
+                        </div>
+                    </div>
+    
+                    <!-- Modal Footer -->
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar Renta</button>
+                        <button type="submit" class="btn btn-primary">Confirmar Renta</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <footer class="footer">
+        <p>&copy; 2024 Propiedades. Todos los derechos reservados.</p>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
